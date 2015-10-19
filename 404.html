@@ -1,0 +1,14 @@
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% else %}
+<html>
+{% endif %}
+	<head>
+		<meta charset="utf-8">
+		<link rel="canonical" href="{{ site.url }}{{ page.redirect }}" />
+		<meta http-equiv="refresh" content="0;url={{ page.redirect }}" />
+	</head>
+	<body>
+		<h1>Page not found</h1>
+	</body>
+</html>
