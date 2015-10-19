@@ -6,5 +6,16 @@ description: Random solutions to problems I encounter
 url: MatthewHartz.github.io
 title: EngineerInDev
 
+#
+# Jekyll Settings
+#
+markdown: redcarpet
+redcarpet:
+  extensions: ["fenced_code_blocks"]
+permalink: /archive/:year/:month/:day/:title/
+paginate: 20
+paginate_path: "page/:num"
+category_dir: categories
+
 gems:
   - jekyll-angular

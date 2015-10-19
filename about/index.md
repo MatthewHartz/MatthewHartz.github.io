@@ -25,5 +25,27 @@ would've ended up as a history major or something.
 ## What I Do For Fun
 
 Sometimes...
-http://imgur.com/u3lWw
+![Bang face on keyboard](http://imgur.com/u3lWw)
 Mostly...
+
+``` csharp
+class Program
+{
+	static void Main(string[] args)
+	{
+		int i;
+		Console.Write("Enter a Number : ");
+		i = int.Parse(Console.ReadLine());
+		if (i % 2 == 0)
+		{
+			Console.Write("Entered Number is an Even Number");
+			Console.Read();
+		}
+		else
+		{
+			Console.Write("Entered Number is an Odd Number");
+			Console.Read();
+		}
+	}
+}
+```
