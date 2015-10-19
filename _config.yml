@@ -5,3 +5,6 @@ author: Matthew Hartz
 description: Random solutions to problems I encounter
 url: MatthewHartz.github.io
 title: EngineerInDev
+
+gems:
+  - jekyll-angular
