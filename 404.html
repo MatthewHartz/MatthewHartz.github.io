@@ -1,3 +1,8 @@
+---
+layout: page
+title: 404
+---
+
 {% if site.lang %}
 <html lang="{{ site.lang }}">
 {% else %}
@@ -6,7 +11,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="canonical" href="{{ site.url }}{{ page.redirect }}" />
-		<meta http-equiv="refresh" content="0;url={{ page.redirect }}" />
+		<meta http-equiv="refresh" content="5; url=/">
 	</head>
 	<body>
 		<h1>Page not found</h1>
