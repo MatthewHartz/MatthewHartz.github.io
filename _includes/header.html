@@ -2,7 +2,7 @@
 	<div id="header">
 		<div id="titleAndImageWrapper">
 			<div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'">
-				<a href="/"><img src="~/Content/Images/Profile.jpg" id="ProfilePic" /></a>
+				<a href="/"><img src="/assets/images/Profile.jpg" id="ProfilePic" /></a>
 			</div>
 			<h1 id="Title">
 				<a target="_self" href="/">Engineer In Dev</a>
@@ -17,11 +17,10 @@
 		</div>
 		<div class="navibar-options">
 			<ul>
-				<li><a target="_self" href="../about">about</a></li>
-				<li><a target="_self" href="../contact">contact</a></li>
-				<li><a target="_self" href="../archive">past</a></li>
+				<li><a href="../about">about</a></li>
+				<li><a href="../contact">contact</a></li>
+				<li><a href="../archive">past</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="navibar-margin" ng-show="!atTop && atTop != null"></div>
 </div>

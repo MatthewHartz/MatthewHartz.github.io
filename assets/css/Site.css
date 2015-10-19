@@ -12,8 +12,15 @@ body {
     font-size: 16px;
 }
 
-#Content {
+#content {
     padding: 20px;
+    height: auto;
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer {
+	padding: 20px;
     height: auto;
     width: 960px;
     margin: 0 auto;
