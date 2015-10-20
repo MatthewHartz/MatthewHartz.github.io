@@ -1,12 +1,12 @@
 ---
-layout: default
-single: true
+layout: page
+title: Blog Archives
 ---
 
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Archive</h1>
-<p>This is where the blog search will be</p>
-</body>
-</html>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
