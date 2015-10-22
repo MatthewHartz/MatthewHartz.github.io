@@ -1,7 +1,7 @@
-<div id="banner" scroll>
+<div id="banner">
 	<div id="header">
 		<div id="titleAndImageWrapper">
-			<div id="ImageCropper" ng-class="atTop || atTop == null ? 'animate-top' : 'animate-scroll'">
+			<div id="ImageCropper">
 				<a href="/"><img src="/assets/images/Profile.jpg" id="ProfilePic" /></a>
 			</div>
 			<h1 id="Title">
@@ -9,13 +9,16 @@
 			</h1>
 		</div>
 	</div>
-	<div class="navibar" ng-class="fixNavbar()">
+	<div id="navibar" data-spy="affix" data-offset-top="100">
 		<div class="social-wrapper">
 			<a class="fa fa-github fa-3x" href="https://github.com/rvbmrdonut"></a>
 			<a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/profile/view?id=339436721&trk=hp-identity-name"></a>
 			<a class="fa fa-twitter fa-3x" href="https://twitter.com/MatthewVHartz"></a>
 		</div>
 		<div class="navibar-options">
+			<div id=stickyImage>
+				Test
+			</div>
 			<ul>
 				<li><a href="/about">about</a></li>
 				<li><a href="https://github.com/MatthewHartz/MatthewHartz.github.io/issues/new">contact</a></li>

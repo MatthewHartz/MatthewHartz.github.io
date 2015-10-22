@@ -31,6 +31,7 @@ footer {
     width: 100%;
     overflow: hidden;
     display: block;
+	min-height: 160px;
 }
 
 #banner * {
@@ -42,7 +43,7 @@ footer {
     top: 8px;
 }
 
-.navibar {
+#navibar {
     height: 70px;
     margin: 0;
     padding: 0 20px 0 20px;
@@ -50,17 +51,14 @@ footer {
     text-align: center;
 }
 
-.navibar-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    border-radius: 0;
-}
-
 .navibar-margin {
     height: 70px;
+}
+
+#stickyImage {
+    float: left;
+    margin: 18px 0 0 0;
+	color: black;
 }
 
 .navibar-options {
@@ -210,4 +208,10 @@ footer {
 
 .Result:hover {
     background-color: #EEEEEE;
+}
+
+#navibar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
