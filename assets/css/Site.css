@@ -31,7 +31,7 @@ footer {
     width: 100%;
     overflow: hidden;
     display: block;
-	min-height: 160px;
+	min-height: 130px;
 }
 
 #banner * {
@@ -39,12 +39,12 @@ footer {
 }
 
 #titleAndImageWrapper {
-    position: relative;
-    top: 8px;
+    height: 100%;
+	padding-top: 5px;
 }
 
 #navibar {
-    height: 70px;
+    height: 50px;
     margin: 0;
     padding: 0 20px 0 20px;
     background-color: #EF5350;
@@ -56,14 +56,30 @@ footer {
 }
 
 #stickyImage {
-    float: left;
-    margin: 18px 0 0 0;
-	color: black;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1000;
+	#float: left;
+	margin-top: 12px;
+	display: none;
+}
+
+#stickyImage img {
+	display: inline;
+    margin: 0 -40px;
+    height: 100%;
+    width: auto;
 }
 
 .navibar-options {
-
     height: 100%;
+	width: 900px;
+	margin: 0 auto;
 }
 
 .navibar-options > ul {
@@ -85,9 +101,9 @@ footer {
 }
 
 
-.navibar-options a {
+.navibar-options li a {
     text-decoration: none;
-    padding: 24px 24px 24px 24px;
+    padding: 14px 14px 14px 14px;
     height: 100%;
     width: 100%;
     display: block;
@@ -95,11 +111,12 @@ footer {
 
 #header {
     text-align: center;
+	height: 80px;
 }
 
 #ImageCropper {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     overflow: hidden;
     display: inline-block;
     -webkit-border-radius: 50%;
@@ -175,7 +192,7 @@ footer {
 
 .social-wrapper {
     float: left;
-    margin: 18px 0 0 0;
+    margin: 10px 0 0 0;
     position: absolute;
 }
 
@@ -214,4 +231,47 @@ footer {
     position: fixed;
     top: 0;
     width: 100%
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	float: left;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 50px;
+	height: 100%;
+	display: inline-block;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }

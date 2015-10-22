@@ -9,16 +9,34 @@
 			</h1>
 		</div>
 	</div>
-	<div id="navibar" data-spy="affix" data-offset-top="100">
+	<div id="navibar" data-spy="affix" data-offset-top="80"">
 		<div class="social-wrapper">
 			<a class="fa fa-github fa-3x" href="https://github.com/rvbmrdonut"></a>
 			<a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/profile/view?id=339436721&trk=hp-identity-name"></a>
 			<a class="fa fa-twitter fa-3x" href="https://twitter.com/MatthewVHartz"></a>
 		</div>
 		<div class="navibar-options">
-			<div id=stickyImage>
-				Test
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<div id=stickyImage>
+							<a href="/"><img src="/assets/images/Profile.jpg" /></a>
+						</div>
+					</div>
+					<div class="back">
+						<div id=stickyImage>
+							<a href="/"><img src="/assets/images/Profile.jpg" /></a>
+						</div>
+					</div>
+				</div>
 			</div>
+			
+			<!--
+			<div id=stickyImage>
+				<a href="/"><img src="/assets/images/Profile.jpg" /></a>
+			</div>
+			-->
+			
 			<ul>
 				<li><a href="/about">about</a></li>
 				<li><a href="https://github.com/MatthewHartz/MatthewHartz.github.io/issues/new">contact</a></li>
