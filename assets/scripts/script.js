@@ -20,4 +20,8 @@ $(function() {
 		}
 		POSITION = temp
     });
+	
+	$("#banner").css("min-height", function(){ 
+		return $(this).height();
+	});
 });
