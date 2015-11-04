@@ -18,7 +18,7 @@ rolling appender.  This locking mechanism prevents my FileSystemWatcher to be ab
 
 To quickly combat this, I wrote a simple FileSystemWatcher that works similar(ish) to the default C\# file system watcher.
 
-### The Code Itself
+## The Code Itself
 
 ```C#
 public class CustomFileWatcher

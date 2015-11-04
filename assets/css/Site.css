@@ -10,12 +10,18 @@ html {
 body {
     font-family: 'Arvo', serif !important;
     font-size: 16px;
+	overflow-x: hidden;
+}
+
+#content h1 {
+	font-size: 46px;
+	font-weight: bold;
 }
 
 #content {
     padding: 20px;
     height: auto;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -44,15 +50,23 @@ footer {
 }
 
 #navibar {
-    height: 50px;
     margin: 0;
-    padding: 0 20px 0 20px;
     background-color: #EF5350;
     text-align: center;
+	border-radius: 0px !important;
+	border: none;
+}
+
+#navibar *{
+	border: none !important;
 }
 
 .navibar-margin {
     height: 70px;
+}
+
+.navbar-header {
+	width: 100% !important;
 }
 
 #stickyImage {
@@ -82,12 +96,20 @@ footer {
 	margin: 0 auto;
 }
 
-.navibar-options > ul {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+#navbarCollapse {
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#navbarCollapse ul {
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.icon-bar {
+	background-color: white !important;
 }
 
 .navibar-options li {
@@ -96,7 +118,7 @@ footer {
     transition: background-color .3s linear;
 }
 
-.navibar-options li:hover {
+#navbarCollapse li:hover {
     background-color: #E53935;
 }
 
@@ -237,6 +259,7 @@ footer {
 .flip-container {
 	perspective: 1000;
 	float: left;
+	margin-left: 10%;
 }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
