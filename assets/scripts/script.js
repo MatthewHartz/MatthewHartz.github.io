@@ -21,7 +21,20 @@ $(function() {
 		POSITION = temp
     });
 	
+	/*
+	*
+	* Jquery stylings
+	*
+	*/
 	$("#banner").css("min-height", function(){ 
 		return $(this).height();
+	});
+	
+	$("#header").css("height", function(){ 
+		return $("#banner").height() - $("#navibar").height();
+	});
+	
+	$("#navibar").attr("data-offset-top", function () {
+		return $("#header").height();
 	});
 });

@@ -41,15 +41,12 @@ footer {
     width: 100%;
     overflow: hidden;
     display: block;
+	max-height: 300px;
+	height: 20%;
 }
 
 #banner * {
     color: white;
-}
-
-#titleAndImageWrapper {
-    height: 100%;
-	padding-top: 5px;
 }
 
 #navibar {
@@ -137,10 +134,12 @@ footer {
 
 #header {
     text-align: center;
-	height: 80px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
-#ImageCropper {
+#imageCropper {
     width: 70px;
     height: 70px;
     overflow: hidden;
@@ -151,22 +150,23 @@ footer {
     z-index: 1000;
 }
 
-#ProfilePic {
+#profilePic {
     display: inline;
     margin: 0 -40px;
     height: 100%;
     width: auto;
 }
 
-#Title {
+#title {
     text-decoration: none;
     display: inline-block;
     position: relative;
     left: 10px;
     top: -20px;
+	font-size: 42px;
 }
 
-#Title > a {
+#title > a {
     text-decoration: none;
 }
 
@@ -217,9 +217,6 @@ footer {
 }
 
 .social-wrapper {
-    float: left;
-    margin: 10px 0 0 0;
-    position: absolute;
 }
 
 .social-wrapper > a {

@@ -1,12 +1,20 @@
 <div id="banner">
 	<div id="header">
-		<div id="titleAndImageWrapper">
-			<div id="ImageCropper">
-				<a href="/"><img src="/assets/images/Profile.jpg" id="ProfilePic" /></a>
+		<div id="headerWrapper">
+			<div>
+				<div id="imageCropper">
+					<a href="/"><img src="/assets/images/Profile.jpg" id="profilePic" /></a>
+				</div>
+				<h1 id="title">
+					<a target="_self" href="/">Engineer In Dev</a>
+				</h1>
 			</div>
-			<h1 id="Title">
-				<a target="_self" href="/">Engineer In Dev</a>
-			</h1>
+			<!-- Other website links -->
+			<div class="social-wrapper">
+				<a class="fa fa-github fa-3x" href="https://github.com/rvbmrdonut"></a>
+				<a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/profile/view?id=339436721&trk=hp-identity-name"></a>
+				<a class="fa fa-twitter fa-3x" href="https://twitter.com/MatthewVHartz"></a>
+			</div>
 		</div>
 	</div>
 	<nav role="navigation" class="navbar navbar-default" id="navibar" data-spy="affix" data-offset-top="80">
@@ -18,6 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+			<!-- Flip container for mini image -->
 			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 				<div class="flipper">
 					<div class="front">
