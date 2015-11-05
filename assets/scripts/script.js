@@ -34,6 +34,10 @@ $(function() {
 		return $("#banner").height() - $("#navibar").height();
 	});
 	
+	/*$("#title").css("height", function(){ 
+		return $("#banner").height() - $("#navibar").height();
+	});*/
+	
 	$("#navibar").attr("data-offset-top", function () {
 		return $("#header").height();
 	});

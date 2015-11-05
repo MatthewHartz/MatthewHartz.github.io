@@ -36,17 +36,48 @@ footer {
     margin: 0 auto;
 }
 
+.navbar {min-height:4em !important}
+.navbar-nav > li > a {font-size: 1.8em !important;}
+
 #banner {
     background-color: #E53935;
     width: 100%;
     overflow: hidden;
     display: block;
-	max-height: 300px;
-	height: 20%;
+	max-height: 400px;
+	height: 25%;
 }
 
 #banner * {
     color: white;
+}
+
+#headerWrapper {
+	height: 100%;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#titleWrapper {
+	height: 100%;
+	float: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titleWrapper div {
+	font-size: 2.5em;
+}
+
+#logoWrapper {
+	height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px 0 0;
 }
 
 #navibar {
@@ -139,9 +170,9 @@ footer {
 	flex-direction: column;
 }
 
-#imageCropper {
-    width: 70px;
-    height: 70px;
+#profilePic {
+    width: 130px;
+    height: 130px;
     overflow: hidden;
     display: inline-block;
     -webkit-border-radius: 50%;
@@ -150,20 +181,8 @@ footer {
     z-index: 1000;
 }
 
-#profilePic {
-    display: inline;
-    margin: 0 -40px;
-    height: 100%;
-    width: auto;
-}
-
 #title {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    left: 10px;
-    top: -20px;
-	font-size: 42px;
+	max-height: 100%;
 }
 
 #title > a {
@@ -219,9 +238,13 @@ footer {
 .social-wrapper {
 }
 
-.social-wrapper > a {
+.social-wrapper a {
     font-size: 30px;
     margin-right: 10px;
+}
+
+.social-wrapper a:last-child {
+    margin-right: 0;
 }
 
 .MetaSection {
