@@ -43,8 +43,11 @@ public class CustomFileWatcher
 		byte[] hash;
 		byte[] tempHash;
 
-		//var fullfiledata = new FileStream(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-		using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+		using (FileStream stream = new FileStream(
+										_path,
+										FileMode.Open,
+										FileAccess.Read,
+										FileShare.ReadWrite))
 			hash = sha1.ComputeHash(stream);
 
 		var task = Task.Factory.StartNew(() =>
@@ -52,14 +55,19 @@ public class CustomFileWatcher
 			// Poll file for changes
 			while (!ct.IsCancellationRequested)
 			{
-				using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+				using (FileStream stream = new FileStream(
+												_path,
+												FileMode.Open,
+												FileAccess.Read,
+												FileShare.ReadWrite))
 					tempHash = sha1.ComputeHash(stream);
 
 				if (!hash.SequenceEqual(tempHash))
 				{
 					hash = tempHash;
 					Changed.Invoke(null, 
-						new FileSystemEventArgs(WatcherChangeTypes.Changed,
+						new FileSystemEventArgs(
+							WatcherChangeTypes.Changed,
 							Path.GetDirectoryName(_path),
 							Path.GetFileName(_path)));
 				}
