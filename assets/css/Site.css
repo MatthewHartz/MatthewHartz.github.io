@@ -36,7 +36,6 @@ footer {
     margin: 0 auto;
 }
 
-.navbar {min-height:4em !important}
 .navbar-nav > li > a {font-size: 1.8em !important;}
 
 #banner {
@@ -44,8 +43,6 @@ footer {
     width: 100%;
     overflow: hidden;
     display: block;
-	max-height: 400px;
-	height: 25%;
 }
 
 #banner * {
@@ -168,6 +165,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+    height: 200px;
 }
 
 #profilePic {
